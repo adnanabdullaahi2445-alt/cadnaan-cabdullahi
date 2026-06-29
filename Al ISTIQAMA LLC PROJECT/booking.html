@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="so">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Istiqaama - Boos Qabsi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image\x-icon" href="image/icon.jpeg">
+</head>
+
+<body>
+
+    <header class="istiqaama-header">
+        <div class="logo-container">
+            <img src="image/logo.jpeg" alt="Logo" class="nav-logo">
+            <h1>AL ISTIQAMA LLC</h1>
+        </div>
+        <nav class="istiqaama-nav">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="booking.html" class="active">booking</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="help.html">help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-padding">
+        <div class="form-container">
+            <h2>Foomka Isdiiwangelinta Xajka</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Macluumaadka Shakhsiga ah</legend>
+
+                    <label for="fullname">Magacaaga Oo Dhammaystiran:</label>
+                    <input type="text" id="fullname" placeholder="gali magacaaga" required minlength="5">
+
+                    <label for="useremail">Email-kaaga:</label>
+                    <input type="email" id="useremail" placeholder="gali email-kaaga" required>
+
+                    <label for="pass">Abuur Password:</label>
+                    <input type="password" id="pass" required>
+
+                    <label>Nooca Adeegga Aad Rabto:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="vip" name="package" value="vip">
+                        <label for="vip">VIP Package</label>
+                        <input type="radio" id="standard" name="package" value="standard" checked>
+                        <label for="standard">Standard Package</label>
+                    </div>
+
+                    <label for="city">waxaad ka dhoofi ka dhaa markaad tigidh keenna aad heshid:</label>
+                    <select id="city">
+                        <option value="mogadishu">Muqdisho</option>
+                        <option value="galkacyo">Galkacyo</option>
+                        <option value="dhuusamareeb">dhuusamareeb</option>
+                        <option value="hargaysa">Hargaysa</option>
+                        <option value="garoowe">garoowe</option>
+                        <option value="boosaaso">boosaaso</option>
+                        <option value="jig-jiga">jig-jiga</option>
+                    </select>
+
+                    <label>
+                        <input type="checkbox" required> Waxaan ogolaaday dhammaan shuruudaha.
+                    </label>
+
+                    <label for="msg">Farriin dheeraad ah:</label>
+                    <textarea id="msg" rows="4"
+                        placeholder="Halkaan ku qor waxyaabaha aad gaarka u baahantahay..."></textarea>
+
+                    <button type="submit" class="btn-submit">Gudbi Codsiga</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Al-Istiqaama Hajj Travel Agency.</p>
+    </footer>
+
+</body>
+
+</html>
